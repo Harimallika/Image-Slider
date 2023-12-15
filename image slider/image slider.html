@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="image lider.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+</head>
+<body>
+    <section class="main swiper mySwiper">
+
+        <div class="wrapper swiper-wrapper">
+
+            <div class="slide swiper-slide">
+
+                <img src="img1.jpg" alt="image" class="image" />
+
+                <div class="image-date">
+
+                    <span class="text">Enjoy the Finest coffee drinks.</span>
+
+                    <h2>Enjoy Our Exclusive</br>Coffe and Cocktails</h2>
+
+                    <a href="#" class="button"> About Us</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+
+              <img src="image3.jpg" alt="image" class="image" />
+
+              <div class="image-date">
+
+                  <span class="text">We really like What we do.</span>
+
+                  <h2>Coffee Beans with a </br> Prefect Aroma</h2>
+
+                  <a href="#" class="button"> About Us</a>
+              </div>
+          </div>
+
+          <div class="slide swiper-slide">
+
+            <img src="image2.jpg" alt="image" class="image" />
+
+            <div class="image-date">
+
+                <span class="text">Making Our Coffee with lover.</span>
+
+                <h2>Alluring and Fragrant</br>Coffe Aroma</h2>
+
+                <a href="#" class="button"> About Us</a>
+            </div>
+        </div>
+
+        <div class="slide swiper-slide">
+
+          <img src="image4.jpeg" alt="image" class="image" />
+
+          <div class="image-date">
+
+              <span class="text">Enjoy the Finest coffee drinks.</span>
+
+              <h2>Enjoy Our Exclusive</br>Coffe and Cocktails</h2>
+
+              <a href="#" class="button"> About Us</a>
+          </div>
+      </div>
+
+        </div>
+
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-pagination "></div>
+    </section>
+
+    <script src="js floder/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    <!-- <script src="image slider.js"></script> -->
+</body>
+</html>
